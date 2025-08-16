@@ -1,83 +1,57 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0; padding: 0;
-    background: #f0f0f0;
-    color: #333;
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0; padding: 1rem;
+    background: #f9f9f9;
   }
   header {
-    background: #007acc;
+    background: #2d89ef;
     color: white;
-    padding: 2rem 1rem;
+    padding: 1rem;
     text-align: center;
   }
-  h1 {
-    margin: 0;
-    font-size: 2.5rem;
-  }
   main {
-    max-width: 900px;
-    margin: 2rem auto;
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 1rem;
     background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
   }
-  section {
-    margin-bottom: 2rem;
+  .product {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
   }
-  h2 {
-    color: #007acc;
-    border-bottom: 2px solid #007acc;
-    padding-bottom: 0.3rem;
+  button {
+    background: #2d89ef;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    border-radius: 4px;
   }
-  ul {
-    list-style-type: none;
+  button:hover {
+    background: #1b5fbd;
+  }
+  #cart {
+    margin-top: 2rem;
+  }
+  #cart h2 {
+    margin-bottom: 0.5rem;
+  }
+  #cart-items {
+    list-style: none;
     padding-left: 0;
   }
-  ul li {
-    padding: 0.3rem 0;
+  #cart-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #ddd;
   }
-  .projects a {
-    color: #007acc;
-    text-decoration: none;
+  #total {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 0.5rem;
   }
-  .projects a:hover {
-    text-decoration: underline;
-  }
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background: #007acc;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
-  @media (max-width: 768px) {
-  main {
-    margin: 1rem;
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  footer {
-    position: relative;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  main {
-    padding: 0.5rem;
-  }
-
-  section {
-    margin-bottom: 1rem;
-  }
-}
